@@ -87,15 +87,18 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
-  padding: 0 0 0 16px;
+  padding: 0;
   max-height: 140px;
   overflow-y: auto;
 }
 
 .participant-item {
-  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 6px;
   font-size: 14px;
   color: #444;
   border-bottom: 1px dashed #f0f0f0;
@@ -105,6 +108,26 @@ section h3 {
   color: #777;
   font-style: italic;
   border-bottom: none;
+  padding: 6px 0;
+}
+
+.participant-name {
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.remove-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .form-group {
